@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="../multimedia/ico/iconoGesa.ico" type="image/x-icon">
+        <link rel="stylesheet" href="../estilos/estilos.css">
+        <title>Ver- Gesa</title>
+    </head>
+</head>
+
+<body class="contenedor contenedor_ver">
+
+    <h1 class="ttppal">Ver Artículos</h1>
+    <section class="botonera">
+        <button class="btn_minMen" onclick="atras()" id="atras"></button>
+        <button class="btn_minMen" onclick="agregar()" id="agregar"></button>
+        <button class="btn_minMen" onclick="ver()" id="ver"></button>
+        <button class="btn_minMen" onclick="mover()" id="mover"></button>
+        <button class="btn_minMen" onclick="settings()" id="settings"></button>
+        <button class="btn_minMen" onclick="home()" id="home"></button>
+        <button class="btn_minMen" onclick="adelante()" id="adelante"></button>
+    </section>
+
+    <section class="buscador">
+        <input type="text" class="inp_buscador" id="inp_buscador">
+        <button class="btn_confirmar" id="btn_buscar">Buscar</button>
+    </section>
+
+    <table class="tabla_stock" id="tabla_stock">
+        <thead>
+            <tr>
+                <th>N de Serie</th>
+                <th>Marca</th>
+                <th>Modelo</th>
+                <th>Estado</th>
+                <th>Ubicacion</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr></tr>
+            <tr></tr>
+        </tbody>
+    </table>
+
+
+
+    <script src="../js/functions.js"></script>
+</body>
+
+</html>

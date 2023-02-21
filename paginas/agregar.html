@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="../multimedia/ico/iconoGesa.ico" type="image/x-icon">
+        <link rel="stylesheet" href="../estilos/estilos.css">
+        <title>Agregar - Gesa</title>
+    </head>
+</head>
+
+<body class="contenedor contenedor_agregar">
+
+    <h1 class="ttppal">Agregar Artículo</h1>
+    <section class="botonera">
+        <button class="btn_minMen" onclick="atras()" id="atras"></button>
+        <button class="btn_minMen" onclick="agregar()" id="agregar"></button>
+        <button class="btn_minMen" onclick="ver()" id="ver"></button>
+        <button class="btn_minMen" onclick="mover()" id="mover"></button>
+        <button class="btn_minMen" onclick="settings()" id="settings"></button>
+        <button class="btn_minMen" onclick="home()" id="home"></button>
+        <button class="btn_minMen" onclick="adelante()" id="adelante"></button>
+    </section>
+
+    <label for="n_serie" class="lbl_serie lbl">N° Serie</label>
+    <input type="text" id="inp_serie" class="inp_serie">
+    <label for="marca" class="lbl_marca lbl">Marca</label>
+    <select class="selector sel_marca" name="marca" id="sel_marca">
+            <option value=""></option>
+            <option value=""></option>
+        </select>
+
+    <label for="modelo" class="lbl_modelo lbl">Modelo</label>
+    <select class="selector sel_modelo" name="modelo" id="sel_modelo">
+            <option value=""></option>
+            <option value=""></option>
+        </select>
+
+    <label for="ubicacion" class="lbl_ubicacion lbl">Ubicacion</label>
+    <select class="selector sel_ubicacion" name="ubicacion" id="sel_ubicacion">
+                <option value=""></option>
+                <option value=""></option>
+            </select>
+
+    <label for="estado" class="lbl_estado lbl">Estado</label>
+    <select class="selector sel_estado" name="estado" id="sel_estado">
+            <option value=""></option>
+            <option value=""></option>
+        </select>
+
+
+
+    <button class="btn_confirmar btn_borrar" id="borrar">Borrar</button>
+    <button class="btn_confirmar btn_guardar" id="guardar">Guardar</button>
+
+
+    <script src="../js/functions.js"></script>
+</body>
+
+</html>

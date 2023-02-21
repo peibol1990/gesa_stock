@@ -1,0 +1,555 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@500&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    font-style: normal;
+    text-decoration: none;
+    list-style: none;
+    color: rgb(213, 180, 107, 0.9);
+    font-family: 'Cairo', sans-serif;
+}
+
+.contenedor {
+    background-image: url("../multimedia/fondos/fondo-gral.png");
+    background-size: cover;
+    text-align: center;
+}
+
+.caja {
+    margin-top: 15%;
+}
+
+.tt-ppal {
+    width: 60%;
+    height: 15%;
+    background-image: url("../multimedia/fondos/stock.png");
+    background-size: cover;
+    color: rgb(254, 0, 2);
+    font-size: 3em;
+    font-weight: 400;
+    border: solid 6px rgba(254, 0, 2, 0.8);
+    border-radius: 0.5em;
+    padding-left: 3em;
+    padding-right: 3em;
+}
+
+.caja section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.caja form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-right: 42.5%;
+    margin-top: 1em;
+}
+
+.caja label {
+    display: flex;
+    justify-content: center;
+    font-size: 1.5em;
+    font-weight: 250;
+    margin-right: 0.5em;
+}
+
+.caja input {
+    text-align: center;
+    border: solid 3px rgba(254, 0, 2, 0.9);
+    background-color: rgba(213, 180, 107, 0.4);
+}
+
+#usuario {
+    border-radius: 0.5em 0.5em 0 0;
+    margin-bottom: 0.3em;
+}
+
+#contraseña {
+    border-radius: 0 0 0.5em 0.5em;
+    margin-bottom: 0.3em;
+}
+
+#user {
+    display: flex;
+    justify-content: center;
+}
+
+#pass {
+    display: flex;
+    justify-content: center;
+}
+
+.caja button {
+    background-color: rgba(213, 180, 107, 0.3);
+    margin-top: 0.5em;
+    margin-right: 0.9em;
+    font-size: 1.5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    border: solid 3px rgba(254, 0, 2, 0.9);
+    border-radius: 0.5em;
+}
+
+.caja button:hover {
+    background-color: rgba(254, 0, 2, 0.4);
+}
+
+#message {
+    width: 50%;
+    display: none;
+    margin-top: 3em;
+    color: red;
+    font-weight: bold;
+    animation-name: cambio;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+
+@keyframes cambio {
+    0% {
+        background-color: white;
+        border: solid 2px black;
+        border-radius: 0.5em;
+    }
+    50% {
+        visibility: visible;
+        background-color: black;
+        border: solid 2px white;
+        border-radius: 0.5em;
+    }
+    100% {
+        background-color: white;
+        border: solid 2px black;
+        border-radius: 0.5em;
+    }
+}
+
+.contenedor-menu {
+    background-image: url("../multimedia/fondos/fondo-gral.png");
+    background-size: cover;
+    text-align: center;
+}
+
+#menu-ppal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin-top: 0.5em;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 0.3em;
+    grid-template-areas: "titulo titulo titulo" ". agregar ." ". ver ." ". gestionar ." ". salir .";
+}
+
+.grid-container button {
+    width: 100%;
+    height: 100%;
+}
+
+button#agregar-equipo:hover {
+    background-color: rgba(254, 0, 2, 0.5);
+}
+
+button#ver-stock:hover {
+    background-color: rgba(254, 0, 2, 0.5);
+}
+
+button#gestionar-sist:hover {
+    background-color: rgba(254, 0, 2, 0.4);
+}
+
+button#salir:hover {
+    background-color: rgba(254, 0, 2, 0.4);
+}
+
+.grid-1 {
+    grid-area: titulo;
+}
+
+.grid-1 h2 {
+    font-size: 2.5em;
+    color: rgba(213, 180, 107, 0.8);
+}
+
+.grid-2 {
+    grid-area: agregar;
+}
+
+#agregar-equipo {
+    background-color: rgba(213, 180, 107, 0.3);
+    margin-top: 0.5em;
+    margin-right: 0.9em;
+    font-size: 1.5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    border: solid 3px rgba(254, 0, 2, 0.9);
+    border-radius: 0.5em 0.5em 0 0;
+}
+
+.grid-3 {
+    grid-area: ver;
+}
+
+#ver-stock {
+    background-color: rgba(213, 180, 107, 0.3);
+    margin-top: 0.5em;
+    margin-right: 0.9em;
+    font-size: 1.5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    border: solid 3px rgba(254, 0, 2, 0.9);
+}
+
+.grid-4 {
+    grid-area: gestionar;
+}
+
+#gestionar-sist {
+    background-color: rgba(213, 180, 107, 0.3);
+    margin-top: 0.5em;
+    margin-right: 0.9em;
+    font-size: 1.5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    border: solid 3px rgba(254, 0, 2, 0.9);
+}
+
+.grid-5 {
+    grid-area: salir;
+}
+
+#salir {
+    background-color: rgba(213, 180, 107, 0.3);
+    margin-top: 0.5em;
+    margin-right: 0.9em;
+    font-size: 1.5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    border: solid 3px rgba(254, 0, 2, 0.9);
+    border-radius: 0 0 0.5em 0.5em;
+}
+
+.contenedor_agregar {
+    margin-top: 10%;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 2px;
+    column-gap: 2px;
+    grid-template-areas: " . ttppal ttppal . " " . botonera botonera . " " . lbl_serie inp_serie . " " . lbl_marca sel_marca . " " . lbl_modelo sel_modelo . " " . lbl_estado sel_estado . " " . lbl_ubicacion sel_ubicacion ." " . btn_borrar btn_guardar . ";
+}
+
+.lbl {
+    display: flex;
+    background-color: rgba(213, 180, 107, 0.3);
+    border: solid 3px rgba(254, 0, 2, 0.9);
+    align-items: center;
+    justify-content: center;
+}
+
+.selector {
+    background-color: rgba(213, 180, 107, 0.3);
+    border: solid 3px rgba(254, 0, 2, 0.9);
+}
+
+.btn_confirmar {
+    background-color: rgba(213, 180, 107, 0.3);
+    border: solid 3px rgba(254, 0, 2, 0.9);
+    font-size: 1.5em;
+}
+
+.btn_confirmar:hover {
+    background-color: rgba(254, 0, 2, 0.5);
+}
+
+.lbl_serie {
+    grid-area: lbl_serie;
+}
+
+.inp_serie {
+    grid-area: inp_serie;
+    border: solid 3px rgba(254, 0, 2, 0.9);
+    background-color: rgba(213, 180, 107, 0.3);
+}
+
+.lbl_marca {
+    grid-area: lbl_marca;
+}
+
+.sel_marca {
+    grid-area: sel_marca;
+}
+
+.lbl_modelo {
+    grid-area: lbl_modelo;
+}
+
+.sel_modelo {
+    grid-area: sel_modelo;
+}
+
+.lbl_estado {
+    grid-area: lbl_estado;
+}
+
+.sel_estado {
+    grid-area: sel_estado;
+}
+
+.lbl_ubicacion {
+    grid-area: lbl_ubicacion;
+}
+
+.sel_ubicacion {
+    grid-area: sel_ubicacion;
+}
+
+.btn_borrar {
+    grid-area: btn_borrar;
+    border-radius: 0 0 0 0.7em;
+}
+
+.btn_guardar {
+    grid-area: btn_guardar;
+    border-radius: 0 0 0.7em 0;
+}
+
+.ttppal {
+    grid-area: ttppal;
+    border: solid 3px rgba(254, 0, 2, 0.9);
+    border-radius: 0.5em 0.5em 0 0;
+    background-image: url("../multimedia/fondos/stock.png");
+    background-size: cover;
+    color: rgba(254, 0, 2, 0.9);
+}
+
+.botonera {
+    border: solid 3px rgba(254, 0, 2, 0.9);
+    grid-area: botonera;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+
+#atras {
+    background-image: url("../multimedia/botones/atras.png");
+    position: relative;
+    display: inline-block;
+}
+
+button#atras:hover::before {
+    content: "Atras";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #000;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#agregar {
+    background-image: url("../multimedia/botones/agregar.png");
+    position: relative;
+    display: inline-block;
+}
+
+button#agregar:hover::before {
+    content: "Agregar Equipo";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #000;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#ver {
+    background-image: url("../multimedia/botones/ver.png");
+    position: relative;
+    display: inline-block;
+}
+
+button#ver:hover::before {
+    content: "Ver Stock";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #000;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#settings {
+    background-image: url("../multimedia/botones/settings.png");
+    position: relative;
+    display: inline-block;
+}
+
+button#settings:hover::before {
+    content: "Gestionar Opciones";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #000;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#mover {
+    background-image: url("../multimedia/botones/mover.png");
+    position: relative;
+    display: inline-block;
+}
+
+button#mover:hover::before {
+    content: "Mover Stock";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #000;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#home {
+    background-image: url("../multimedia/botones/home.png");
+    position: relative;
+    display: inline-block;
+}
+
+button#home:hover::before {
+    content: "Inicio";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #000;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#adelante {
+    background-image: url("../multimedia/botones/adelante.png");
+    position: relative;
+    display: inline-block;
+}
+
+button#adelante:hover::before {
+    content: "Adelante";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #000;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.btn_minMen {
+    background-color: rgba(213, 180, 107, 0.3);
+    height: 100%;
+    width: 14%;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.btn_minMen:hover {
+    background-color: rgba(254, 0, 2, 0.5);
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 0 auto;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: rgba(213, 180, 107, 0.3);
+}
+
+.contenedor_ver {
+    display: grid;
+    margin-top: 10%;
+    grid-template-rows: 1fr 1fr 1fr 7fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 2px;
+    column-gap: 2px;
+    grid-template-areas: " . ttppal ttppal . " " . botonera botonera . " " . buscador buscador ." " . tabla_stock tabla_stock . ";
+}
+
+.tabla_stock {
+    grid-area: tabla_stock;
+}
+
+.tabla_stock thead {
+    border: solid 3px rgba(254, 0, 2, 0.9);
+}
+
+.tabla_stock th {
+    border: solid 3px rgba(254, 0, 2, 0.9);
+}
+
+.buscador {
+    grid-area: buscador;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.lbl_buscar {
+    width: 7em;
+}
+
+.inp_buscador {
+    background-color: rgba(213, 180, 107, 0.3);
+    border: solid 3px rgba(254, 0, 2, 0.9);
+    border-radius: 0.5em;
+    margin-left: 2px;
+    margin-right: 2px;
+    height: 3em;
+}
+
+button#btn_buscar {
+    border-radius: 0.5em;
+    font-size: 1em;
+    width: 7em;
+}
